@@ -4,6 +4,10 @@ import Greeting from "./components/pure/greeting";
 import GreetingF from "./components/pure/greetingF";
 import TaskListComponent from "./components/container/task.list";
 import { ContactListComponent } from "./components/container/contact_list";
+import Ejemplo1 from "./hooks/Ejemplo1";
+import Ejemplo2 from "./hooks/Ejemplo2";
+import MiComponenteConContexto from "./hooks/Ejemplo3";
+import Ejemplo4 from "./hooks/Ejemplo4";
 
 function App() {
   
@@ -14,8 +18,17 @@ function App() {
         {/* Componente funcional greetingsF.jsx */}
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
-        {/* <TaskListComponent/> */}
-        <ContactListComponent />
+        <TaskListComponent/>
+        {/* <ContactListComponent /> */}
+        {/* <Ejemplo1 /> */}
+        {/* <Ejemplo2 /> */}
+        {/* <MiComponenteConContexto /> */}
+        {/* <Ejemplo4 nombre= "Blas"> */}
+        {/* Todo lo que hay aquí dentro es tratado como props.children */}
+{/*           <h3>
+            Contenido del props.children
+          </h3>
+        </Ejemplo4> */}
     </div>
   );
 }

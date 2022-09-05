@@ -9,8 +9,8 @@ function GreetingF(props) {
         setage(age + 1)
     }
 
-  return (
-      <div>
+    return (
+        <div>
             <h1>Hola {props.name}!</h1>
             <h2>Edad: {age}</h2>
             <button onClick={birthday}>cumplir años</button>
