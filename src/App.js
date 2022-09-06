@@ -8,6 +8,9 @@ import Ejemplo1 from "./hooks/Ejemplo1";
 import Ejemplo2 from "./hooks/Ejemplo2";
 import MiComponenteConContexto from "./hooks/Ejemplo3";
 import Ejemplo4 from "./hooks/Ejemplo4";
+import Greetingstyled from "./components/pure/greetingStyled";
+import ClocksFC from "./components/pure/clocksFC";
+import Clock from "./components/pure/clocks";
 
 function App() {
   
@@ -18,7 +21,7 @@ function App() {
         {/* Componente funcional greetingsF.jsx */}
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
-        <TaskListComponent/>
+        {/* <TaskListComponent/> */}
         {/* <ContactListComponent /> */}
         {/* <Ejemplo1 /> */}
         {/* <Ejemplo2 /> */}
@@ -29,6 +32,9 @@ function App() {
             Contenido del props.children
           </h3>
         </Ejemplo4> */}
+        {/* <Greetingstyled name="Martín" /> */}
+        <ClocksFC />
+        <Clock />
     </div>
   );
 }
