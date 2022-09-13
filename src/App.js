@@ -11,6 +11,7 @@ import Ejemplo4 from "./hooks/Ejemplo4";
 import Greetingstyled from "./components/pure/greetingStyled";
 import ClocksFC from "./components/pure/clocksFC";
 import Clock from "./components/pure/clocks";
+import Father from "./components/container/father"
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
         {/* <TaskListComponent/> */}
-        {/* <ContactListComponent /> */}
+        <ContactListComponent />
         {/* <Ejemplo1 /> */}
         {/* <Ejemplo2 /> */}
         {/* <MiComponenteConContexto /> */}
@@ -33,8 +34,9 @@ function App() {
           </h3>
         </Ejemplo4> */}
         {/* <Greetingstyled name="Martín" /> */}
-        <ClocksFC />
-        <Clock />
+        {/* <ClocksFC /> */}
+        {/* <Clock /> */}
+        {/* <Father /> */}
     </div>
   );
 }

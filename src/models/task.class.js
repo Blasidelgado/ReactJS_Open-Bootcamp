@@ -1,11 +1,11 @@
-import { levels } from "./levels.enum";
+import { LEVELS } from "./levels.enum";
 
 
 export class Task {
     name = '';
     description = '';
     completed = false;
-    level = levels.NORMAL;
+    level = LEVELS.NORMAL;
 
     constructor(name,description,completed,level){
         this.name = name;

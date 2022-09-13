@@ -13,11 +13,13 @@ const ClocksFC = (props) => {
   const [state, setState] = useState(initialState)
 
   const tick = () => {
-    setState({
-      fecha : new Date(),
-      edad: ++state.edad ,
-      nombre: state.nombre,
-      apellidos: state.apellidos,
+    setState(prevState => {
+      let edad = prevState.edad + 1
+      return {
+        ...prevState,
+        fecha : new Date(),
+        edad,
+      }
   })
 }
 
