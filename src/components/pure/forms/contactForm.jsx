@@ -21,7 +21,7 @@ const ContactForm = ( {add} ) => {
 
   return (
     <form onSubmit={addContact}>
-    <h4>Agregar contacto</h4>
+        <h4>Agregar contacto</h4>
         <label htmlFor='name'>Nombre</label>
         <input id= 'name' ref={nameRef} type='text' placeholder='nombre'></input>
         <label htmlFor='name'>Apellido</label>

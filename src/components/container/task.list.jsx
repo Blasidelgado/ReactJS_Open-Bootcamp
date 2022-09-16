@@ -70,8 +70,9 @@ const TaskListComponent = () => {
                 <tbody>
                   {tasks.map((task, index) => {
                     return (
-                      <TaskComponent key={index} task={task} complete={completeTask} remove={deleteTask} />)
-                  })}
+                      <TaskComponent key={index} task={task} complete={completeTask} remove={deleteTask} />
+                      )
+                    })}
                 </tbody>
               </table>
             </div>

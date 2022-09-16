@@ -12,6 +12,8 @@ import Greetingstyled from "./components/pure/greetingStyled";
 import ClocksFC from "./components/pure/clocksFC";
 import Clock from "./components/pure/clocks";
 import Father from "./components/container/father"
+import OptionalRender from "./components/pure/optionalRender";
+import Square from "./components/pure/square";
 
 function App() {
   
@@ -23,7 +25,7 @@ function App() {
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
         {/* <TaskListComponent/> */}
-        <ContactListComponent />
+        {/* <ContactListComponent /> */}
         {/* <Ejemplo1 /> */}
         {/* <Ejemplo2 /> */}
         {/* <MiComponenteConContexto /> */}
@@ -37,6 +39,10 @@ function App() {
         {/* <ClocksFC /> */}
         {/* <Clock /> */}
         {/* <Father /> */}
+
+        {/* Ejemplos de renderizado condicional */}
+        {/* <OptionalRender /> */}
+        <Square />
     </div>
   );
 }
