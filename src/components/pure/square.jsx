@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 
 const Square = () => {
     
@@ -23,6 +23,7 @@ const Square = () => {
     }
 
     const [squareStyle, setSquareStyle] = useState(initialStyle)
+    const [animation, setAnimation] = useState(false)
     
     function changeColor() {
         let newColor = {
@@ -32,21 +33,32 @@ const Square = () => {
         setSquareStyle(newColor)
     }
     
-    let loop;
+    const myInterval = useRef()
 
-    function repeat() {
+    function startAnimation() {
+        setAnimation(true)
         changeColor()
-        loop = setInterval(changeColor, 2000)
+        myInterval.current = setInterval(changeColor, 2000)
     }
 
-    function stopRepeat(){
-        clearInterval(loop)
+    function endRepeat(){
+        setSquareStyle(initialStyle)
+        clearInterval(myInterval.current)
+    }
+
+    function cancelAnimation(){
+        setAnimation(false)
+        clearInterval(myInterval.current)
     }
     
 
     return (
         <div>
-            <div style={squareStyle} onMouseEnter={repeat} onMouseOut={stopRepeat}>
+            <div 
+            style={squareStyle} 
+            onMouseEnter={startAnimation} 
+            onMouseLeave={endRepeat} 
+            onDoubleClick={animation ? cancelAnimation : startAnimation}>
                 Hover me!
             </div>
         </div>
