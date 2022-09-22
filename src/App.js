@@ -14,6 +14,8 @@ import Clock from "./components/pure/clocks";
 import Father from "./components/container/father"
 import OptionalRender from "./components/pure/optionalRender";
 import Square from "./components/pure/square";
+import Loginformik from "./components/pure/forms/loginFormik";
+import Registerformik from "./components/pure/forms/registerFormik";
 
 function App() {
   
@@ -42,7 +44,11 @@ function App() {
 
         {/* Ejemplos de renderizado condicional */}
         {/* <OptionalRender /> */}
-        <Square />
+        {/* <Square /> */}
+
+        {/* Ejemplos de uso de Formik y Yup */}
+        {/* <Loginformik /> */}
+        <Registerformik />
     </div>
   );
 }
