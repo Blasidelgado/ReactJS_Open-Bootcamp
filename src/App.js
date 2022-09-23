@@ -27,7 +27,7 @@ function App() {
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
         {/* <TaskListComponent/> */}
-        {/* <ContactListComponent /> */}
+        <ContactListComponent />
         {/* <Ejemplo1 /> */}
         {/* <Ejemplo2 /> */}
         {/* <MiComponenteConContexto /> */}
@@ -48,7 +48,7 @@ function App() {
 
         {/* Ejemplos de uso de Formik y Yup */}
         {/* <Loginformik /> */}
-        <Registerformik />
+        {/* <Registerformik /> */}
     </div>
   );
 }

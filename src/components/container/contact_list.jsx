@@ -3,6 +3,7 @@ import { Contact } from '../../models/contact.class'
 import ContactForm from '../pure/forms/contactForm'
 import ContactComponent from '../pure/contact'
 import '../../styles/contact.scss'
+import ContactFormik from '../pure/forms/contactFormik'
 
 export const ContactListComponent = () => {
     
@@ -42,7 +43,10 @@ export const ContactListComponent = () => {
                 return (
                 <ContactComponent key={index} contact={contact} logInOut={changeStatus} remove ={removeContact} />
             )})}
-            <ContactForm add={addContact} />
+
+            {/* <ContactForm add={addContact} /> */}
+
+            <ContactFormik add={addContact}/>
         </div>
   )
 }
