@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Greeting from "./components/pure/greeting";
 import GreetingF from "./components/pure/greetingF";
-import TaskListComponent from "./components/container/task.list";
+import Taskspage from "./pages/tasks/TasksPage";
 import { ContactListComponent } from "./components/container/contact_list";
 import Ejemplo1 from "./hooks/Ejemplo1";
 import Ejemplo2 from "./hooks/Ejemplo2";
@@ -14,8 +14,8 @@ import Clock from "./components/pure/clocks";
 import Father from "./components/container/father"
 import OptionalRender from "./components/pure/optionalRender";
 import Square from "./components/pure/square";
-import Loginformik from "./components/pure/forms/loginFormik";
-import Registerformik from "./components/pure/forms/registerFormik";
+import LoginPage from "./components/pure/forms/loginFormik";
+import RegisterPage from "./components/pure/forms/registerFormik";
 
 function App() {
   
@@ -26,7 +26,7 @@ function App() {
         {/* Componente funcional greetingsF.jsx */}
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
-        {/* <TaskListComponent/> */}
+        {/* <Taskspage /> */}
         <ContactListComponent />
         {/* <Ejemplo1 /> */}
         {/* <Ejemplo2 /> */}
@@ -47,8 +47,8 @@ function App() {
         {/* <Square /> */}
 
         {/* Ejemplos de uso de Formik y Yup */}
-        {/* <Loginformik /> */}
-        {/* <Registerformik /> */}
+        {/* <LoginPage /> */}
+        {/* <RegisterPage /> */}
     </div>
   );
 }

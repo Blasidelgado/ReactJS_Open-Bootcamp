@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { ROLES } from '../../../models/roles.enum';
 import { User } from '../../../models/user.class';
 
-const Registerformik = () => {
+const RegisterFormik = () => {
 
     let user = new User();
 
@@ -133,4 +133,4 @@ const Registerformik = () => {
     );
 }
 
-export default Registerformik;
+export default RegisterFormik;
