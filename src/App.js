@@ -3,7 +3,7 @@ import "./App.css";
 import Greeting from "./components/pure/greeting";
 import GreetingF from "./components/pure/greetingF";
 import Taskspage from "./pages/tasks/TasksPage";
-import { ContactListComponent } from "./components/container/contact_list";
+import ContactListComponent from "./components/container/contact_list";
 import Ejemplo1 from "./hooks/Ejemplo1";
 import Ejemplo2 from "./hooks/Ejemplo2";
 import MiComponenteConContexto from "./hooks/Ejemplo3";
@@ -15,7 +15,7 @@ import Father from "./components/container/father"
 import OptionalRender from "./components/pure/optionalRender";
 import Square from "./components/pure/square";
 import LoginPage from "./components/pure/forms/loginFormik";
-import RegisterPage from "./components/pure/forms/registerFormik";
+import RegisterPage from "./components/pure/forms/RegisterFormik";
 
 function App() {
   

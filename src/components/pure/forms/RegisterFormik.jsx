@@ -70,6 +70,7 @@ const RegisterFormik = () => {
                     handleBlur }) => (
                         <Form>
                             <label htmlFor="username">Username</label>
+                            <br/>
                             <Field id="username" type="text" name="username" placeholder="Your username" />
                             
                             {/* Username Errors */}
@@ -79,8 +80,9 @@ const RegisterFormik = () => {
                                     <ErrorMessage name="username" component='div'></ErrorMessage>
                                 )
                             }
-
+                            <br/>
                             <label htmlFor="email">Email</label>
+                            <br/>
                             <Field id="email" type="email" name="email" placeholder="example@email.com" />
 
                             {/* Email Errors */}
@@ -90,8 +92,9 @@ const RegisterFormik = () => {
                                     <ErrorMessage name="email" component='div'></ErrorMessage>
                                 )
                             }
-
+                            <br/>
                             <label htmlFor="password">Password</label>
+                            <br/>
                             <Field
                                 id="password"
                                 name="password"
@@ -105,8 +108,9 @@ const RegisterFormik = () => {
                                     <ErrorMessage name="password" component='div'></ErrorMessage>
                                 )
                             }
-
+                            <br/>
                             <label htmlFor="confirm">Password</label>
+                            <br/>
                             <Field
                                 id="confirm"
                                 name="confirm"
@@ -120,8 +124,8 @@ const RegisterFormik = () => {
                                     <ErrorMessage name="confirm" component='div'></ErrorMessage>
                                 )
                             }
-
-                            <button type="submit">Register Account</button>
+                            <br/>
+                            <button type="submit" className='mt-2'>Register Account</button>
                             {isSubmitting ? (<p>Sending your credentials...</p>): null}
 
                         </Form>

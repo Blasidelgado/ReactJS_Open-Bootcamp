@@ -5,7 +5,7 @@ import ContactComponent from '../pure/contact'
 import '../../styles/contact.scss'
 import ContactFormik from '../pure/forms/contactFormik'
 
-export const ContactListComponent = () => {
+const ContactListComponent = () => {
     
     const exampleContact1 = new Contact ('Blas Ignacio', 'Delgado', 'blasidelgado@gmail.com', true)
     const exampleContact2 = new Contact ('Blas Ignacio2', 'Delgado2', 'blasidelgado2@gmail.com', false)
@@ -37,8 +37,8 @@ export const ContactListComponent = () => {
 
     return (
         <div className='d-flex flex-column justify-content-center align-items-center'>
-            <h1>Contactos</h1>
-            <h4>Lista de contactos:</h4>
+            <h1>Contacts</h1>
+            <h4>My contact list:</h4>
             {contacts.map((contact, index) => {
                 return (
                 <ContactComponent key={index} contact={contact} logInOut={changeStatus} remove ={removeContact} />
@@ -50,3 +50,5 @@ export const ContactListComponent = () => {
         </div>
   )
 }
+
+export default ContactListComponent

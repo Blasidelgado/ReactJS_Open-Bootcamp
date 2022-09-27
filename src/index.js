@@ -10,11 +10,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppRoutingOne from './AppRoutingOne';
 import AppRoutingFinal from './AppRoutingFInal';
+import AppRoutingExercise from './AppRoutingExercise';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // <App />
-    <AppRoutingFinal />
+    <AppRoutingExercise />
 );
 
 // If you want to start measuring performance in your app, pass a function
