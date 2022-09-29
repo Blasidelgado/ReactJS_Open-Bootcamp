@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { getAllPagedUsers, getAllUsers, getUserDetails } from '../../services/fetchService'
+import { getAllPagedUsers, getAllUsers, getUserDetails, login } from '../../services/fetchService'
 
 const FetchExample = () => {
 
@@ -64,10 +64,25 @@ const FetchExample = () => {
       })
   }
 
+  const authUser = () => {
+    login('eve.holt@reqres.in', 'cityslicka' )
+      .then((response) => {
+        console.log('Token:', response.token)
+        sessionStorage.setItem('token', response.token)
+      })
+      .catch((error) => {
+        alert(`Error while login user: ${error}`)
+      })
+      .finally(() => {
+        console.log('Ended login user. Navigate to Home...');
+      })
+  }
+
 
   return (
     <div>
-      
+    {/* Button to simulate login */}
+      <button onClick={authUser}>Auth User</button>
       <h2>Users: </h2>
       {users.map((user) => {
         return (

@@ -19,6 +19,7 @@ import RegisterPage from "./components/pure/forms/RegisterFormik";
 import AsyncExample from "./components/pure/AsyncExample";
 import ObservableExample from "./components/pure/ObservableExample";
 import FetchExample from "./components/pure/FetchExample";
+import AxiosExample from "./components/pure/AxiosExample";
 
 function App() {
   
@@ -56,7 +57,8 @@ function App() {
         {/* Ejemplos de procesos asíncronos */}
         {/* <AsyncExample /> */}
         {/* <ObservableExample /> */}
-        <FetchExample />
+        {/* <FetchExample /> */}
+        <AxiosExample />
     </div>
   );
 }
