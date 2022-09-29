@@ -14,8 +14,8 @@ import AppRoutingExercise from './AppRoutingExercise';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    // <App />
-    <AppRoutingExercise />
+    <App />
+    // <AppRoutingExercise />
 );
 
 // If you want to start measuring performance in your app, pass a function

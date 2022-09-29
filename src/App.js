@@ -16,6 +16,9 @@ import OptionalRender from "./components/pure/optionalRender";
 import Square from "./components/pure/square";
 import LoginPage from "./components/pure/forms/loginFormik";
 import RegisterPage from "./components/pure/forms/RegisterFormik";
+import AsyncExample from "./components/pure/AsyncExample";
+import ObservableExample from "./components/pure/ObservableExample";
+import FetchExample from "./components/pure/FetchExample";
 
 function App() {
   
@@ -27,7 +30,7 @@ function App() {
         {/* <GreetingF name= "Blas" age={22+1}></GreetingF> */}
         {/* Componente lista que renderiza un elemento que utiliza clases y variables auxiliares */}
         {/* <Taskspage /> */}
-        <ContactListComponent />
+        {/* <ContactListComponent /> */}
         {/* <Ejemplo1 /> */}
         {/* <Ejemplo2 /> */}
         {/* <MiComponenteConContexto /> */}
@@ -49,6 +52,11 @@ function App() {
         {/* Ejemplos de uso de Formik y Yup */}
         {/* <LoginPage /> */}
         {/* <RegisterPage /> */}
+
+        {/* Ejemplos de procesos asíncronos */}
+        {/* <AsyncExample /> */}
+        {/* <ObservableExample /> */}
+        <FetchExample />
     </div>
   );
 }
