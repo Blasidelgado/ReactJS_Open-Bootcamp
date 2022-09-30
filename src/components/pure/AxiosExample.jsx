@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import getRandomUser from '../../services/axiosService'
+import {getRandomUser} from '../../services/axiosService'
 
 const AxiosExample = () => {
 
