@@ -25,15 +25,15 @@ const AxiosExample = () => {
         <h1>Axios example</h1>
         {user != null ?
         (<div>
-            {/* <img src={user.picture.large} alt='avatar'></img> */}
+            <img src={user.picture.large} alt='avatar'></img>
             <h2>{user.name.title} {user.name.first} {user.name.last}</h2>
             <h3>{user.email}</h3>
         </div>)
-        :
-        (<div>
+        :   null }
+        <div>
             <p>Generate a new user</p>
-            <button onClick={obtainUser}>Random User</button>
-        </div>)}
+        </div>
+        <button onClick={obtainUser}>Random User</button>
     </div>
   )
 }
